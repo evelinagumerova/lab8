@@ -2,19 +2,19 @@
 def z1():
 
     from PIL import Image
-    filename = "1970-01-01 03-00-00_1613973847164.JPG"
+    filename = "minions.JPG"
     image = Image.open(filename)  # С помощью функции интерпретатора (ImageOpen) открываем пнг файл
-    image.show("1970-01-01 03-00-00_1613973847164.JPG")
+    image.show("minions.JPG")
     # Загрузите изображение
-    filename = Image.open("1970-01-01 03-00-00_1613973847164.JPG")
+    filename = Image.open("minions.jpg.JPG")
     # Задайте координаты области, которую хотите обрезать
     left, upper, right, lower = 100, 100, 500, 300
     # Обрежьте изображение с заданными координатами (левый верхний угол, правый нижний угол)
     cropped_image = filename.crop((left, upper, right, lower))
 
     # Сохраните обрезанное изображение под новым именем
-    cropped_image.save("new_1970-01-01 03-00-00_1613973847164.JPG")
-    cropped_image.show("new_1970-01-01 03-00-00_1613973847164.JPG")
+    cropped_image.save("new_minions.JPG")
+    cropped_image.show("new_minions.JPG")
 
 
 # 2 задание
